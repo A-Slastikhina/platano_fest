@@ -82,7 +82,7 @@ $min-width: 765px;
 @media(min-width:$min-width) {
     .section-header {   
     display: block;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     height: max-content;
