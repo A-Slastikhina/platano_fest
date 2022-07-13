@@ -29,14 +29,13 @@ function outHeader () {
 
 };
 
-//let headOffsetTop = sectionHeader.offsetParent;
-//    console.log(headOffsetTop);
+window.addEventListener('scroll', headBlack);
+function headBlack (){
+    if (pageYOffset < 50 ) {
+        sectionHeader.style.opacity = '1';
+        sectionHeader.style.backgroundColor = '#111111';
+        sectionHeader.style.transition = '0.3s';
 
-    const headTopCoord = sectionHeader.getBoundingClientRect().top;
-    const headTopDocCoord = headTopCoord + document.body.scrollTop;
-
-    console.log(headTopCoord);
-    console.log(headTopDocCoord);
-
-
+    }
+}
 
